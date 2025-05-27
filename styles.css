@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5be66;
+}
+
+.app {
+  background: #fff;
+  width: 90%;
+  max-width: 600px;
+  margin: 70px auto 0;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  padding: 80px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Dela Gothic One", cursive;
+}
+
+.app h1,
+h4 {
+  font-size: 2rem;
+  color: #e88465;
+  text-align: center;
+  font-weight: 1500;
+  border-bottom: 5px solid #c78893;
+  padding-bottom: 30px;
+}
+.quiz-container {
+  padding: 20px 0;
+}
+.quiz-container h2 {
+  font-size: 2rem;
+  color: #e88465;
+  font-weight: 1500;
+}
+.btn {
+  background: #fff;
+  color: #222;
+  font-weight: 500;
+  width: 100%;
+  border: 1px solid #c78893;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3 s ease;
+}
+.btn:hover {
+  background: #acd0df;
+  color: #fff;
+}
+.btn:hover:not([disabled]) {
+  color: #fff;
+}
+.btn:disabled {
+  cursor: not-allowed;
+}
+#next-btn {
+  background: #e88465;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  width: 20%;
+  border: none;
+  padding: 10px 28px;
+  margin: 20px auto 0;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none;
+}
+#return-btn {
+  background: #e88465;
+  color: #fff;
+  border: none;
+  padding: 10px 28px;
+  border-radius: 6px;
+  font-size: 16px;
+  margin: 20px auto 0;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: block;
+  justify-content: center;
+}
+
+#return-btn:hover {
+  background: #d32f2f;
+}
+
+.correct {
+  background-color: #a9d5c5;
+  font-weight: 500;
+}
+.incorrect {
+  background-color: #f44336;
+  font-weight: 500;
+}
+#signin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+  padding: 32px 24px;
+  max-width: 400px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#signin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+#signin-form label {
+  font-weight: 600;
+  color: #e88465;
+  margin-bottom: 4px;
+}
+
+#signin-form input {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #c78893;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+#signin-form input:focus {
+  border: 1.5px solid #e88465;
+}
+
+#signin-btn {
+  background: #e88465;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+#signin-btn:hover {
+  background: #c78893;
+}
+
+.signin-title {
+  color: #e88465;
+  font-family: "Dela Gothic One", cursive;
+  margin-bottom: 8px;
+  font-size: 2rem;
+}
+
+.signin-desc {
+  color: #555;
+  margin-bottom: 18px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .btn {
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 0.95rem;
+    padding: 10px 8px;
+    margin: 8px 0;
+  }
+  #answer-buttons {
+    width: 100%;
+    padding: 0;
+  }
+  .app {
+    padding: 10px 2vw;
+    margin: 50px auto;
+    max-width: 100vw;
+  }
+  .app h1,
+  .app h4 {
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+  }
+  #signin-container,
+  .quiz-container {
+    margin: 20px auto;
+    padding: 12px 4vw;
+    max-width: 99vw;
+    border-radius: 8px;
+  }
+  .signin-title {
+    font-size: 1.2rem;
+  }
+  .signin-desc {
+    font-size: 0.95rem;
+  }
+  #signin-form input {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+  #signin-btn,
+  #next-btn,
+  #return-btn {
+    font-size: 1rem;
+    padding: 8px 0;
+    width: 100%;
+    margin: 12px 0 0 0;
+  }
+  .quiz-container h2,
+  #question {
+    font-size: 1.1rem;
+    padding: 0 2px;
+    word-break: break-word;
+  }
+  .btn {
+    font-size: 0.95rem;
+    padding: 8px;
+    margin: 8px 0;
+  }
+}
