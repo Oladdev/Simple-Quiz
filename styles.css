@@ -63,9 +63,24 @@ h4 {
   color: #fff;
 }
 .btn:hover:not([disabled]) {
+  background: #e88465;
   color: #fff;
 }
 .btn:disabled {
+  cursor: not-allowed;
+}
+.btn.correct:hover,
+.btn.incorrect:hover,
+.btn:disabled:hover {
+  background: inherit !important;
+  color: inherit !important;
+  cursor: not-allowed;
+}
+.btn.correct:hover,
+.btn.incorrect:hover,
+.btn:disabled:hover {
+  background: inherit !important;
+  color: inherit !important;
   cursor: not-allowed;
 }
 #next-btn {
