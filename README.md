@@ -76,7 +76,7 @@ All you need is a modern web browser (like Chrome, Firefox, or Edge).
 
 ## 🔧 Customization (Make Your Own Quiz!)
 
-This project is designed to be easily customized. You can create your own quiz by editing just one file: `js/questions.js`.
+This project was not designed to be easily customized. But you can create your own quiz by editing just one file: `js/questions.js`. <b>***After you've cloned it that is***</b>
 
 **How to Add or Change Questions:**
 
@@ -111,7 +111,7 @@ Here is a brief overview of the project's file structure:
 
 ## 📄 License
 
-Distributed under the MIT License. See the `LICENSE` file for more information (though one is not included, you can add one).
+Distributed under the MIT License. See the `LICENSE` file for more information (though one is not included <b>yet</b>).
 
 ---
 <p align="center">
