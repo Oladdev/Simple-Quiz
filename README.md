@@ -106,7 +106,7 @@ Here is a brief overview of the project's file structure:
 
 -   **`index.html`**: Contains the HTML for all elements (start button, quiz box, results box).
 -   **`css/style.css`**: Handles all the styling, layout, and responsiveness.
--   **`js/questions.js`**: Holds the `questions` array. **This is the file to edit to create your own quiz.**
+-   **`js/script.js`**: Holds the `questions` array. **This is the file to edit to create your own quiz.**
 -   **`js/script.js`**: Contains all the JavaScript logic for starting the quiz, showing questions, handling clicks, calculating the score, and showing the results.
 
 ## 📄 License
